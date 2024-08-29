@@ -1,0 +1,148 @@
+.port-management-page {
+    font-family: Arial, sans-serif;
+    max-width: 100%; /* Fixed width for the entire page */
+    margin: auto; /* Center the page horizontally */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #333; /* Darker background for the navbar */
+    color: white;
+    border-bottom: 1px solid #ccc;
+    height: 60px; /* Ensure the navbar has a fixed height */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-sizing: border-box; /* Ensure padding is included in height */
+    overflow: visible; /* Ensure content doesn't get cut off */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo span {
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    padding: 30px;
+    max-width: 100%; /* Ensure content does not overflow */
+    margin-top: 60px; /* Add margin to ensure content starts below the header */
+}
+
+.overview-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.text-content {
+    max-width: 50%;
+}
+
+.text-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.text-content p {
+    font-size: 1.25rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+}
+
+.log-out-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.action-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #e0e0e0;
+    color: #333;
+    width: 120px; /* Fixed width for consistency */
+    text-align: center;
+}
+
+.action-button.active {
+    background-color: #ff4040;
+    color: white;
+}
+
+.image-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-content img {
+    width: 35%; /* Increase the image size */
+    border-radius: 20px;
+  }
+
+.cards-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px; /* Add spacing from the overview section */
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ensure the card takes full width within the grid */
+    padding: 20px; /* Padding inside the card */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    text-align: center; /* Center-align text in the card */
+}
+
+.card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+}
